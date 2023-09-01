@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gerenciamento de Consumo - Undefined</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Cadastro de Clientes</h1>
+      <form id="clientForm">
+        <div class="mb-3">
+          <label for="clientName" class="form-label">Nome do Cliente</label>
+          <input type="text" class="form-control" id="clientName" required />
+        </div>
+        <div class="mb-3">
+          <label for="clientEmail" class="form-label">Email do Cliente</label>
+          <input type="email" class="form-control" id="clientEmail" required />
+        </div>
+        <div class="mb-3">
+          <label for="clientAge" class="form-label">Idade do Cliente</label>
+          <input type="number" class="form-control" id="clientAge" required />
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">
+          Cadastrar Cliente
+        </button>
+      </form>
+    </div>
+
+    <script src="../assets/src/main.js"></script>
+  </body>
+</html>

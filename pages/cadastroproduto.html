@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gerenciamento de Consumo - Undefined</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Cadastro de Produtos</h1>
+      <form id="productForm" class="mt-5">
+        <div class="mb-3">
+          <label for="productName" class="form-label">Nome do Produto</label>
+          <input type="text" class="form-control" id="productName" required />
+        </div>
+        <div class="mb-3">
+          <label for="productBrand" class="form-label">Marca do Produto</label>
+          <input type="text" class="form-control" id="productBrand" required />
+        </div>
+        <div class="mb-3">
+          <label for="productQuantity" class="form-label"
+            >Quantidade do Produto</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="productQuantity"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar Produto</button>
+      </form>
+    </div>
+
+    <script src="../assets/src/main.js"></script>
+  </body>
+</html>

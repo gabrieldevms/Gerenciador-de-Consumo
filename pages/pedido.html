@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gerenciamento de Consumo - Undefined</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Realizar Pedido</h1>
+      <form id="orderForm">
+        <div class="mb-3">
+          <label for="orderClientName" class="form-label"
+            >Nome Completo do Cliente</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="orderClientName"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="orderClientEmail" class="form-label"
+            >Email do Cliente</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="orderClientEmail"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="orderProductName" class="form-label"
+            >Nome do Produto</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="orderProductName"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="orderProductBrand" class="form-label"
+            >Marca do Produto</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="orderProductBrand"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="orderQuantity" class="form-label">Quantidade</label>
+          <input
+            type="number"
+            class="form-control"
+            id="orderQuantity"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Realizar Pedido</button>
+      </form>
+    </div>
+
+    <script src="../assets/src/orders.js"></script>
+  </body>
+</html>

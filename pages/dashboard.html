@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gerenciamento de Consumo - Undefined</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center">Dashboard de consumo</h1>
+    </header>
+
+    <main>
+      <section class="container">
+        <form id="filterForm" action="/filtra-consumo" method="post">
+          <div class="form-group">
+            <label for="produto">Produto:</label>
+            <select class="form-control" name="produto" id="filterProduto">
+              <option value="">Selecione um produto</option>
+              <!-- Opções de produtos serão adicionadas dinamicamente aqui -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="marca">Marca:</label>
+            <select class="form-control" name="marca" id="filterMarca">
+              <option value="">Selecione uma marca</option>
+              <!-- Opções de marcas serão adicionadas dinamicamente aqui -->
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Filtrar</button>
+        </form>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Nome do cliente</th>
+              <th>Quantidade consumida</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-consumo"></tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+  <script src="../assets/src/script.js"></script>
+</html>
